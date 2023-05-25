@@ -1,0 +1,7 @@
+0创建使用环境
+conda create -n gatk
+conda activate gatk
+比对
+bwa mem -t 64 -R '@RG\tID:123\tSM:123\tPL:illumina'  ../genome/genome.fa 1.clean.fq.gz 2.clean.fq.gz -o ouput.sam
+
+
